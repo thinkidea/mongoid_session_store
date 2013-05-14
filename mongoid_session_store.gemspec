@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
   s.description = "Store rails 3 sessions in mongoDB."
   s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   
-  s.add_dependency('rails', "~> 3.0")
-  s.add_dependency('mongoid', '~> 2.3')
+  s.add_dependency('rails', "4.0.0.rc1")
+  s.add_dependency('mongoid', '~> 4.0')
 end
