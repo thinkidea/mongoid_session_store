@@ -4,11 +4,6 @@ module ActionDispatch
 
       class Session
         include Mongoid::Document
-        
-        store_in :sessions
-
-        identity :type => String
-
         field :data, :type => String, :default => [Marshal.dump({})].pack("m*")
       end
 
